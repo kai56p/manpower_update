@@ -52,7 +52,8 @@ if not todays_df.empty:
         
     whatsapp_lines.append(f"Total manpower  =  {int(total_manpower)}")
     
-    APP_URL = "https://your-app-name.streamlit.app"
+    # APP_URL = "https://your-app-name.streamlit.app"
+    APP_URL = "https://manpowerupdate-tnyp8osa8fcfycjstivc7x.streamlit.app/?embed_options=dark_theme"
     whatsapp_lines.append("\n----------------------------------------")
     whatsapp_lines.append(f"⚠️ *Update via link:* {APP_URL}")
     
