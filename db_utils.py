@@ -9,8 +9,14 @@ def init_dummy_db():
     
     # 1. Static lookup data (Deployment_Code removed)
     dummy_data = pd.DataFrame({
-        'Supervisor': ['Sheng Hui', 'Edrey', 'Faiz', 'Kaung'],
-        'Site_Location': ['TMJP', 'Brani', 'Brani', 'Brani'],
+        'Supervisor': ['Suman_Structure', 'Alim_Lifting', 
+        'Junayed_Scaffolding', 'Kanaja_MEP',
+        'Sheak_Safety','Aung_Surveyor',
+        'Kasthurisaravana_General','Nannu_Structure',
+        'Shahadat_Safety','Sala_HB',
+        'Matubbar Kajol_Facade'
+        ],
+        'Site_Location': ['TMJP', 'Brani', 'Brani', 'TMJP', 'TMJP', 'TMJP', 'TMJP', 'TMJP', 'TMJP', 'TMJP', 'TMJP'],
     })
     dummy_data.to_sql('deployments', conn, if_exists='replace', index=False)
     

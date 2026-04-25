@@ -48,7 +48,7 @@ if not todays_df.empty:
     ]
     
     for index, row in todays_df.iterrows():
-        whatsapp_lines.append(f"{row['Supervisor']} >>  {row['Workers']}")
+        whatsapp_lines.append(f"{row['Supervisor']} ->  {row['Workers']}")
         
     whatsapp_lines.append(f"Total manpower  =  {int(total_manpower)}")
     
